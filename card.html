@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+<!-- tailwind and daisy ui cdn  -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- goggle font link  -->
+<script src="https://kit.fontawesome.com/2ac8b00d8a.js" crossorigin="anonymous"></script>
+
+<!-- goggle font(lato) link -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@700;900&display=swap" rel="stylesheet">
+
+<!-- javascript code part  -->
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'for-btn': '#F85559',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    
+        *{
+            font-family: 'Lato', sans-serif;
+        }
+    
+  </style>
+</head>
+<body >
+    <section class="container mx-auto my-16 ">
+        <nav>
+            <div class="navbar bg-[#F85559] p-2 lg:p-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 rounded-full ">
+           
+
+                <div class="navbar-start">
+                    <div class="dropdown">
+                     
+      
+                        <div class="navbar">
+                          <div class="navbar-start">
+                            <div class="dropdown">
+                              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                              </label>
+                              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                                </ul>
+                            </div>
+                            
+                          </div>
+                          <div class="navbar-center hidden lg:flex">
+                            <ul class="menu menu-horizontal px-1">
+                               <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="navbar-center">
+                    <a class="btn btn-ghost normal-case text-xl ">
+                     <div class="flex justify-center items-center gap-4">
+                          <img src="images/logo.png" alt=""> 
+                          <h2 class="text-4xl p-2 ">Fruit Burst</h2>
+                      </div>
+                    </a>
+                  </div>
+                <div class="navbar-end relative ml-36">
+                    <input type="text" placeholder="Search here" class="input input-bordered w-full  rounded-full p-2" />
+                    <i class="fa-solid fa-magnifying-glass absolute top-4 right-3"></i>
+                </div>
+              </div>
+        </nav>
+    </section>
+</body>
+</html>
